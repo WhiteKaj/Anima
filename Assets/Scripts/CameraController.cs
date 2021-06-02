@@ -17,6 +17,13 @@ public class CameraController : MonoBehaviour
 
         mouseX = this.gameObject.transform.eulerAngles.y;
         mouseY = playerCamera.transform.eulerAngles.x;
+
+        if (rotationInputAllowed)
+        {
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+
     }
 
     void Update()
