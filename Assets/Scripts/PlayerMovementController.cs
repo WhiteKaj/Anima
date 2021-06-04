@@ -20,8 +20,6 @@ public class PlayerMovementController : MonoBehaviour
     void Update()
     {
         HandleMovement();
-        if (Input.GetButtonUp("Fire1"))
-            playerAnim.SetTrigger("2HAxeAttack");
     }
     void HandleMovement()
     {
